@@ -1,1 +1,90 @@
-#test{font-size: 60p; color: green;}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,600&display=swap');
+
+
+:root{
+    --red:#DA291C;
+    --BLUE:#006DB7;
+    --YELLOW:#FFD700;
+    --GREEN: #00AF4D;
+    --WHITE:#ffffff;
+    --black:#000000;
+    --font:'Rubik', sans-serif;
+    --rootsize:20px;
+    --max-size:1200px;
+
+}
+
+
+body{
+    background-image: url(images_for_website/mainbackground.png); 
+    background-color: var(--YELLOW);
+    font-family: var(--font);
+    font-size: var(--rootsize);
+    margin-top: 0;
+    padding-top: 0;
+
+} 
+
+
+
+/* fixed text sizes*/
+
+p{
+    font-size: 1rem;
+}
+h2{
+    font-size: 2.5rem; font-weight:700;
+}
+
+h3{
+    font-size: 1.5rem; font-weight: 600;
+}
+
+/* main structure*/
+#container{
+    width: 100%;
+    max-width: var(--max-size);
+    margin: 0 auto;
+    min-width: 200px;
+    background-color: var(--WHITE);
+}
+
+/* header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+
+#logo{
+    max-width:15rem;
+}
+
+#carticon{max-width: 3rem;}
+
+nav{
+    background-color: var(--red);
+    
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a{
+    display: inline-block;
+    padding: 1rem;
+    color: var(--WHITE);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    background-color: var(--YELLOW);
+    color: var(--black);
+}
+
